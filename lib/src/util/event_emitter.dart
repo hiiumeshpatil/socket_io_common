@@ -74,6 +74,7 @@ class EventEmitter {
    * This function binds the [handler] as a listener to the [event]
    */
   void on(String event, EventHandler handler) {
+    print("umesh")
     this._events.putIfAbsent(event, () => <EventHandler>[]);
     this._events[event]!.add(handler);
   }
